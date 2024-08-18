@@ -11,10 +11,17 @@ require (
 )
 
 require (
+	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
+	golang.org/x/image v0.19.0 // indirect
+)
+
+require (
 	filippo.io/edwards25519 v1.1.0 // indirect
+	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/PuerkitoBio/purell v1.2.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
+	github.com/boombuler/barcode v1.0.2
 	github.com/bytedance/sonic v1.12.1 // indirect
 	github.com/bytedance/sonic/loader v0.2.0 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
@@ -33,6 +40,8 @@ require (
 	github.com/go-playground/validator/v10 v10.22.0 // indirect
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/goccy/go-json v0.10.3 // indirect
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
+	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
@@ -50,6 +59,7 @@ require (
 	github.com/swaggo/files v1.0.1 // indirect
 	github.com/swaggo/gin-swagger v1.6.0 // indirect
 	github.com/swaggo/swag v1.16.3 // indirect
+	github.com/tealeg/xlsx v1.0.5
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
 	github.com/urfave/cli/v2 v2.27.4 // indirect
@@ -70,11 +80,18 @@ require (
 //而这个模块还没推送到远程，是没有办法下载下来的，因此需要用 replace 将其指定读取本地的模块路径
 replace (
 	github.com/AOaixuexi/go-gin-example-follow/conf => ./pkg/conf
-	github.com/AOaixuexi/go-gin-example-follow/docs => ./docs
+	github.com/AOaixuexi/go-gin-example-follow/docs/swager => ./docs/swagger
 	github.com/AOaixuexi/go-gin-example-follow/middleware => ./middleware
 	github.com/AOaixuexi/go-gin-example-follow/models => ./models
 	github.com/AOaixuexi/go-gin-example-follow/pkg/e => ./pkg/e
+	github.com/AOaixuexi/go-gin-example-follow/pkg/logging => ./pkg/logging
 	github.com/AOaixuexi/go-gin-example-follow/pkg/setting => ./pkg/setting
+	github.com/AOaixuexi/go-gin-example-follow/pkg/upload => ./pkg/upload
 	github.com/AOaixuexi/go-gin-example-follow/pkg/util => ./pkg/util
 	github.com/AOaixuexi/go-gin-example-follow/routers => ./routers
+	github.com/AOaixuexi/go-gin-example-follow/routers/api => ./routers/api
+	github.com/AOaixuexi/go-gin-example-follow/service => ./service
+	github.com/AOaixuexi/go-gin-example-follow/setting => ./setting
+	github.com/AOaixuexi/go-gin-example-follow/util => ./util
+	github.com/AOaixuexi/go-gin-example-follow/vendor => ./vendor
 )
